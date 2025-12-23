@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GAMER-SHOPPER</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"/>
+</head>
+<body>
+    <div id="page" class="site page-cart">
+
+        <aside class="site-off desktop-hide">
+            <div class="off-canvas">
+                <div class="canvas-head flexitem">
+                      <div class="logo"><a href="index.html"><span class="circle"></span>.GAMER SHOPPER</a></div>
+                     <a href="#" class="t-close flexcenter"><i class="ri-close-line"></i></a>
+                </div>
+                <div class="departments"></div>
+                <nav></nav>
+                <div class="thetop-nav"></div>
+            </div>
+        </aside>
+
+
+        <head>
+            <div class="header-top mobile-hide">
+                <div class="container">
+                    <div class="wrapper flexitem">
+                        <div class="left">
+                            <ul class="flexitem main-links">
+                                <li><a href="blog.html">Blog</a></li>
+                                <li><a href="wishlist.html">Wishlist</a></li>
+                            </ul>
+                        </div>
+                        <div class="right">
+                            <ul class="flexitem main-links">
+                                    <li><a href="#">Register</a></li>
+                                    <li><a href="#">Login</a></li>
+                                    <li><a href="ordertracking.html">Order Tracking</a></li><div class="currency-selector">
+    <label for="currency">Currency:</label>
+    <select id="currencySelect">
+        <option value="USD" selected>USD $</option>
+        <option value="GBP">GBP £</option>
+        <option value="EUR">EUR €</option>
+    </select>
+</div>
+
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--header-top-->
+
+            <div class="header-nav">
+                <div class="container">
+                    <div class="wrapper flexitem">
+                        <a href="#" class="trigger desktop-hide"><span class="i ri-menu-2-line"></span></a>
+                        <div class="left flexitem">
+                            <div class="logo"><a href="index.html"><span class="circle"></span>.GAMER SHOPPER</a></div>
+                            <nav class="mobile-hide">
+                                <ul class="flexitem second-links">
+                                    <li><a href="index.html">Home</a></li>
+                                    <li><a href="page-category.html">Shop</a></li>
+                                    <li class="has-child">
+    <a href="#">ALL CATEGORIES
+        <div class="icon-small"><i class="ri-arrow-down-s-line"></i></div>
+    </a>
+    <div class="mega">
+        <div class="container">
+            <div class="wrapper">
+
+                <!-- PC & Consoles -->
+                <div class="flexcol">
+                    <div class="row">
+                        <h4>PC & Consoles</h4>
+                        <ul>
+                            <li><a href="#">Gaming Laptops</a></li>
+                            <li><a href="#">Gaming Desktops</a></li>
+                            <li><a href="#">Consoles</a></li>
+                            <li><a href="#">Game Controllers</a></li>
+                            <li><a href="#">VR Headsets</a></li>
+                            <li><a href="#">Console Accessories</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Accessories & Peripherals -->
+                <div class="flexcol">
+                    <div class="row">
+                        <h4>Accessories & Peripherals</h4>
+                        <ul>
+                            <li><a href="#">Keyboards</a></li>
+                            <li><a href="#">Mice</a></li>
+                            <li><a href="#">Mouse Pads</a></li>
+                            <li><a href="#">Headsets</a></li>
+                            <li><a href="#">Webcams</a></li>
+                            <li><a href="#">Speakers</a></li>
+                            <li><a href="#">Controllers</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Streaming & Recording Gear -->
+                <div class="flexcol">
+                    <div class="row">
+                        <h4>Streaming & Recording</h4>
+                        <ul>
+                            <li><a href="#">Microphones</a></li>
+                            <li><a href="#">Capture Cards</a></li>
+                            <li><a href="#">Lighting & Ring Lights</a></li>
+                            <li><a href="#">Green Screens</a></li>
+                            <li><a href="#">Streaming Kits</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Gaming Apparel -->
+                <div class="flexcol">
+                    <div class="row">
+                        <h4>Gamer Apparel</h4>
+                        <ul>
+                            <li><a href="#">T-Shirts</a></li>
+                            <li><a href="#">Hoodies & Sweatshirts</a></li>
+                            <li><a href="#">Hats & Caps</a></li>
+                            <li><a href="#">Socks</a></li>
+                            <li><a href="#">Jackets</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Figures & Gaming Merch -->
+                <div class="flexcol">
+                    <div class="row">
+                        <h4>Figures & Gaming Merch</h4>
+                        <ul>
+                            <li><a href="#">Action Figures</a></li>
+                            <li><a href="#">Funko Pops</a></li>
+                            <li><a href="#">Posters & Wall Art</a></li>
+                            <li><a href="#">Mugs & Drinkware</a></li>
+                            <li><a href="#">Keychains & Badges</a></li>
+                            <li><a href="#">LED Signs & Room Decor</a></li>
+                            <li><a href="#">Collectible Sets</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Furniture & Gaming Setup -->
+                <div class="flexcol">
+                    <div class="row">
+                        <h4>Furniture & Gaming Setup</h4>
+                        <ul>
+                            <li><a href="#">Gaming Monitors</a></li>
+                            <li><a href="#">Gaming Chairs</a></li>
+                            <li><a href="#">Gaming Desks</a></li>
+                            <li><a href="#">Desk Mats & Pads</a></li>
+                            <li><a href="#">Monitor Stands</a></li>
+                            <li><a href="#">Cable Management</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</li>
+
+                        </div>
+                        <div class="right">
+                            <ul class="flexitem second-links">
+                                <li class="mobile-hide"><a href="wishlist.html">
+                                    <div class="icon-large"><i class="ri-heart-line"></i>
+                                    <div class="fly-item"><span class="item-number">0</span></div>
+                                    </div>
+                                </a></li>
+                               <li  class="iscart"><a href="#">
+                                    <div class="icon-large">
+                                        <i class="ri-shopping-cart-line"></i>
+                                        <div class="fly-item"><span class="item-number">0</span></div>
+                                    </div>
+                                    <div class="icon-text">
+                                        <div class="mini-text">Total</div>
+                                        <div class="cart-total">$559.98</div>
+                                    </div>
+                                </a>
+                                <div class="mini-cart">
+                                    <div class="content">
+                                        <div class="cart-head">
+                                            <p>5 items in cart</p>
+                                        </div>
+                                        <div class="cart-body">
+                                            <ul class="products mini">
+                                                <li class="item">
+                                                    <div class="thumbnail">
+                                                        <a href="#"><img src="assets/products/home2.jpg" alt="Product"></a>
+                                                    </div>
+                                                    <div class="item-content">
+                                                        <p><a href="#">Diamable Ceiling Light Modern</a></p>
+                                                        <span class="price">$279.99 <span class="quantity">x2</span>
+                                                    </span>
+                                                </div>
+                                                <button class="item-remove"><i class="ri-close-line"></i></button>
+                                            </li>
+                                            <!-- Add more items here -->
+                                            </ul>
+                                        </div>
+                                        <div class="cart-footer">
+                                            <p>Total: <strong>$559.98</strong></p>
+                                            <a href="checkout.html" class="checkout-btn">Checkout</a>
+                                             <a href="cart.html" class="checkout-btn">View Cart</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            
+            <div class="header-main mobile-hide">
+                <div class="container">
+                    <div class="wrapper flexitem">
+                        <div class="left">
+                            <div class="dpt-cat">
+                                <div class="dpt-head">
+                                    <div class="main-text">All Departments</div>
+                                    <div class="mini-text mobile-hide">Total 1059 Products</div>
+                                    <a href="#" class="dpt-trigger mobile-hide">
+                                        <i class="ri-menu-3-line ri-xl"></i>
+                                        <i class="ri-close-line ri-xl"></i>
+                                    </a>
+                                </div><div class="dpt-menu">
+    <ul class="second-links">
+
+        <!-- PC & Consoles -->
+        <li class="has-child pc-consoles">
+            <a href="#">
+                <div class="icon-large"><i class="ri-gamepad-line"></i></div>
+                PC & Consoles
+                <div class="icon-small"><i class="ri-arrow-right-s-line"></i></div>
+            </a>
+            <ul>
+                <li><a href="#">Gaming Laptops</a></li>
+                <li><a href="#">Gaming Desktops</a></li>
+                <li><a href="#">Consoles</a></li>
+                <li><a href="#">Game Controllers</a></li>
+                <li><a href="#">VR Headsets</a></li>
+                <li><a href="#">Console Accessories</a></li>
+            </ul>
+        </li>
+
+        <!-- Accessories & Peripherals -->
+        <li class="has-child accessories">
+            <a href="#">
+                <div class="icon-large"><i class="ri-keyboard-line"></i></div>
+                Accessories & Peripherals
+                <div class="icon-small"><i class="ri-arrow-right-s-line"></i></div>
+            </a>
+            <ul>
+                <li><a href="#">Keyboards</a></li>
+                <li><a href="#">Mice</a></li>
+                <li><a href="#">Mouse Pads</a></li>
+                <li><a href="#">Headsets</a></li>
+                <li><a href="#">Webcams</a></li>
+                <li><a href="#">Speakers</a></li>
+                <li><a href="#">Controllers</a></li>
+            </ul>
+        </li>
+
+        <!-- Streaming & Recording -->
+        <li class="has-child streaming">
+            <a href="#">
+                <div class="icon-large"><i class="ri-mic-line"></i></div>
+                Streaming & Recording
+                <div class="icon-small"><i class="ri-arrow-right-s-line"></i></div>
+            </a>
+            <ul>
+                <li><a href="#">Microphones</a></li>
+                <li><a href="#">Capture Cards</a></li>
+                <li><a href="#">Lighting & Ring Lights</a></li>
+                <li><a href="#">Green Screens</a></li>
+                <li><a href="#">Streaming Kits</a></li>
+            </ul>
+        </li>
+
+        <!-- Gamer Apparel -->
+        <li class="has-child apparel">
+            <a href="#">
+                <div class="icon-large"><i class="ri-t-shirt-air-line"></i></div>
+                Gamer Apparel
+                <div class="icon-small"><i class="ri-arrow-right-s-line"></i></div>
+            </a>
+            <ul>
+                <li><a href="#">T-Shirts</a></li>
+                <li><a href="#">Hoodies & Sweatshirts</a></li>
+                <li><a href="#">Hats & Caps</a></li>
+                <li><a href="#">Socks</a></li>
+                <li><a href="#">Jackets</a></li>
+            </ul>
+        </li>
+
+        <!-- Figures & Gaming Merch -->
+        <li class="has-child merch">
+            <a href="#">
+                <div class="icon-large"><i class="ri-star-line"></i></div>
+                Figures & Gaming Merch
+                <div class="icon-small"><i class="ri-arrow-right-s-line"></i></div>
+            </a>
+            <ul>
+                <li><a href="#">Action Figures</a></li>
+                <li><a href="#">Funko Pops</a></li>
+                <li><a href="#">Posters & Wall Art</a></li>
+                <li><a href="#">Mugs & Drinkware</a></li>
+                <li><a href="#">Keychains & Badges</a></li>
+                <li><a href="#">LED Signs & Room Decor</a></li>
+                <li><a href="#">Collectible Sets</a></li>
+            </ul>
+        </li>
+
+        <!-- Furniture & Gaming Setup -->
+        <li class="has-child furniture">
+            <a href="#">
+                <div class="icon-large"><i class="ri-computer-line"></i></div>
+                Furniture & Gaming Setup
+                <div class="icon-small"><i class="ri-arrow-right-s-line"></i></div>
+            </a>
+            <ul>
+                <li><a href="#">Gaming Chairs</a></li>
+                <li><a href="#">Gaming Desks</a></li>
+                <li><a href="#">Desk Mats & Pads</a></li>
+                <li><a href="#">Monitor Stands</a></li>
+                <li><a href="#">Cable Management</a></li>
+            </ul>
+        </li>
+
+        <!-- Games & Software -->
+        <li class="has-child software">
+            <a href="#">
+                <div class="icon-large"><i class="ri-game-line"></i></div>
+                Games & Software
+                <div class="icon-small"><i class="ri-arrow-right-s-line"></i></div>
+            </a>
+            <ul>
+                <li><a href="#">PC Games</a></li>
+                <li><a href="#">Console Games</a></li>
+                <li><a href="#">Game Codes & Gift Cards</a></li>
+                <li><a href="#">Game Subscriptions</a></li>
+            </ul>
+            </li>
+        </li>
+
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="right">
+                            <div class="search-box">
+                                <form action="" class="search">
+                                    <span class="icon-large"><i class="ri-search-line"></i></span>
+                                    <input type="search" placeholder="Search for products">
+                                    <button type="submit">Search</button> 
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!--header-->
+
+        <main>
+
+      <div class="wishlist-page">
+
+    <h1 class="wishlist-title">Your Wishlist</h1>
+
+    <div class="wishlist-container">
+
+        <ul class="wishlist-items">
+
+            <li class="wishlist-item">
+                <div class="wishlist-thumbnail">
+                    <a href="#"><img src="assets/products/home2.jpg" alt=""></a>
+                </div>
+                <div class="wishlist-details">
+                    <p><a href="#">Diamable Ceiling Light Modern</a></p>
+                    <span class="price">$279.99</span>
+                </div>
+                <div class="wishlist-actions">
+                    <button class="move-to-cart">Add to Cart</button>
+                    <button class="remove-item">remove</i></button>
+                </div>
+            </li>
+
+            <!-- Repeat li for more wishlist products -->
+
+        </ul>
+
+    </div>
+
+</div>
+
+
+
+      </main>
+        <!--main-->
+
+        <footer>
+            <div class="newsletter">
+                <div class="container">
+                    <div class="wrapper">
+                        <div class="box">
+                            <div class="content">
+                                <h3>Join Our Newsletter</h3>
+                                <p>Get E-mail updates about our lastest shop and <strong>special offers</strong></p>
+                            </div>
+                            <form action="" class="search">
+                                <span class="icon-large"><i class="ri-mail-line"></i></span>
+                                <input type="mail" placeholder="Your email address" required>
+                                <button type="submit">Sign Up</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--Newsletter-->
+
+            <div class="widgets">
+                <div class="container">
+                    <div class="wrapper">
+                        <div class="flexwrap">
+                            <div class="row">
+                                <div class="item mini-links">
+                                    <h4>Help & Contact</h4>
+                                    <ul class="flexcol">
+                                       <li><a href="#"><i class="ri-instagram-fill">INSTAGRAM</i></a></li>
+                                        <li><a href="#"><i class="ri-mail-fill">EMAIL US</i></a></li>
+                                        <li><a href="#"><i class="ri-twitter-fill">TWITTER</i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="item mini-links">
+                                    <h4>Product Categories</h4>
+                                    <ul class="flexcol">
+                                        <li><a href="#">Gaming Laptops</a></li>
+                                        <li><a href="#">Gaming Desktops</a></li>
+                                        <li><a href="#">Consoles</a></li>
+                                        <li><a href="#">Game Controllers</a></li>
+                                        <li><a href="#">VR Headsets</a></li>
+                                        <li><a href="#">Console Accessories</a></li>
+                                        <li><a href="#">Keyboards</a></li>
+                                        <li><a href="#">Furniture & Gaming Setup</a></li>
+                                        <li><a href="#">Figures & Gaming Merch</a></li>
+                                        <li><a href="#">Streaming & Recording</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="item mini-links">
+                                    <h4>Accepted Payment Methods</h4>
+                                    <ul class="flexcol">
+                                        <li><strong>.Credit & Debit Card</strong></li>
+                                        <li>•Visa •MasterCard <br>•American Express •Maestro</li>
+                                        <li><strong>.Digital Wallets</strong></li>
+                                        <li>•Apple Pay <br>•Google Pay</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="item mini-links">
+                                    <h4>We currently operate and deliver to:</h4>
+                                    <ul class="flexcol">
+                                        <li>•Europe <br>•North America <br>•Australia & New Zealand</li>
+                                    </ul> <br>
+                                </div> <div class="row">
+                                <div class="item mini-links">
+                                    <h4>NOTE:</h4>
+                                    <ul class="flexcol">
+                                        <li><strong>Delivery times vary by location.</strong></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--widgets-->
+
+            <div class="footer-info">
+                <div class="container">
+                    <div class="wrapper">
+                        <div class="flexcol">
+                            <div class="logo">
+
+                                <a href="#"><span class="circle"></span>.Gamer Shopper</a>
+                            </div>
+                            <div class="socials">
+                                <ul class="flexitem">
+                                    <li><a href="#"><i class="ri-twitter-line"></i></a></li>
+                                    <li><a href="#"><i class="ri-facebook-line"></i></a></li>
+                                    <li><a href="#"><i class="ri-instagram-line"></i></a></li>
+                                    <li><a href="#"><i class="ri-linkedin-line"></i></a></li>
+                                    <li><a href="#"><i class="ri-youtube-line"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <p class="mini-text">Copyright © 2025 Gamer Shopper. All rights reserved.</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!--footer-->
+
+        <div class="menu-bottom desktop-hide">
+            <div class="container">
+                <div class="wrapper">
+                    <nav>
+                        <ul class="flexitem">
+                            <li>
+                                <a href="page-category.html">
+                                    <i class="ri-store-3-line ri-2x"></i>
+                                    <span>Shop</span>
+                                </a>
+                            </li>
+                          <li>
+                                <a href="#">
+                                    <i class="ri-user-6-line"></i>
+                                    <span>Account</span>
+                                </a>
+                            </li>
+                              <li>
+                                <a href="wishlist.html">
+                                    <i class="ri-heart-line"></i>
+                                    <span>Wishlist</span>
+                                </a>
+                            </li>
+                              <li>
+                                <a href="#0" class="t-search">
+                                    <i class="ri-search-line"></i>
+                                    <span>Search</span>
+                                </a>
+                            </li>
+                              <li>
+                                <a href="#0" class="cart-trigger">
+                                    <i class="ri-shopping-cart-line"></i>
+                                    <span>Cart</span>
+                                    <div class="fly-item">
+                                        <span class="item-number">0</span>
+                                    </div>
+                                </a>
+                            </li>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <!--menu bottom-->
+
+        <div class="search-bottom desktop-hide">
+            <div class="container">
+                <div class="wrapper">
+                    <form action="" class="search">
+                        <a href="#" class="t-close search-close flexcenter"><i class="ri-close-line"></i></a>
+                        <span class="icon-large"><i class="ri-search-line"></i></span>
+                        <input type="search" placeholder="Search for products" required>
+                        <button type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <!--search bottom-->
+
+        <div class="overlay"></div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fslightbox/3.3.1/index.js"></script>
+    <script src="script.js"></script><script>
+const Ftoshow = '.filter';
+const Fpopup = document.querySelector(Ftoshow);
+const Ftrigger = document.querySelector('.filter-trigger');
+
+if (Ftrigger && Fpopup) {
+    Ftrigger.addEventListener('click', () => {
+        setTimeout(() => {
+            if (!Fpopup.classList.contains('show')) {  
+                Fpopup.classList.add('show');
+            }
+        }, 250);
+    });
+}
+
+// auto close by click outside .filter
+if (Fpopup) {
+    document.addEventListener('click', (e) => {
+        const isClosest = e.target.closest(Ftoshow); 
+        if (!isClosest && Fpopup.classList.contains('show')) {
+            Fpopup.classList.remove('show');
+        }
+    });
+}
+</script>
+
+    <!-- Back to Top -->
+<a href="#" class="back-to-top" id="backToTop">
+    <i class="ri-arrow-up-line"></i>
+</a>
+<script>
+    const backToTop = document.getElementById('backToTop');
+
+    window.addEventListener('scroll', () => {
+        if (window.scrollY > 300) {
+            backToTop.classList.add('show');
+        } else {
+            backToTop.classList.remove('show');
+        }
+    });
+
+    backToTop.addEventListener('click', (e) => {
+        e.preventDefault();
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+</script>
+
+</body>
+</html>

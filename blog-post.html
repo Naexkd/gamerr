@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>GAMER-SHOPPER Blog</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"rel="stylesheet"/>
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+   <style>
+    /* Mobile Menu */
+    .mobile-menu {
+        position: fixed;
+        top: 0;
+        right: -250px; 
+        width: 250px;
+        height: 50%;
+        background-color: #fff;
+        box-shadow: -2px 0 8px rgba(0,0,0,0.3);
+        padding: 20px;
+        transition: right 0.3s ease-in-out;
+        z-index: 9999;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .mobile-menu.show {
+        right: 0; 
+    }
+
+    .mobile-menu a {
+        padding: 10px 0;
+        text-decoration: none;
+        color: #000;
+        font-weight: 500;
+    }
+
+    .mobile-menu a:hover {
+        color: #007bff;
+    }
+
+    #closeBtn {
+        align-self: flex-end;
+        background: none;
+        border: none;
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+  </style>
+</head>
+<body>
+
+<!-- HEADER -->
+<header class="blog-header fixed-top">
+  <div class="container d-flex align-items-center justify-content-between">
+      <div class="logo"><a href="blog.html">.GAMER</a></div>
+
+    <nav class="d-none d-md-flex gap-4">
+      <a href="blog.html">Home</a>
+       <label for="currency">Category:</label>
+    <select id="currencySelect">
+        <option value="USD" selected>ALL CATEGORIES</option>
+        <option value="GBP">REVIEWS</option>
+        <option value="EUR">SETUPS</option>
+        <option value="EUR">GAMES</option>
+    </select>
+      <a href="index.html">Store</a>
+      <a href="createArticle.html" class="btn btn-sm btn-primary">Write</a>
+    </nav>
+
+    <button class="btn btn-outline-dark d-md-none" id="menuBtn">☰</button>
+  </div>
+
+   <div class="right">
+                            <div class="search-box">
+                                <form action="" class="search">
+                                    <span class="icon-large"><i class="ri-search-line"></i></span>
+                                    <input type="search" placeholder="Search for products">
+                                    <button type="submit">Search</button> 
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+</header>
+
+<!-- MOBILE MENU -->
+<div class="mobile-menu" id="mobileMenu">
+  <button id="closeBtn" class="btn-close">✖</button>
+  <a href="blog.html">Home</a>
+  <a href="#">Categories</a>
+  <a href="index.html">Store</a>
+  <a href="createArticle.html">Write</a>
+</div>
+
+ <!-- ARTICLE CONTENT -->
+  <main class="container my-5 pt-5 article-page">
+    <div class="article-image mb-4">
+      <img src="assets/products/electronic5.jpg" alt="Article Image" class="img-fluid">
+    </div>
+
+    <h1 class="article-title mb-3">Your Article Title Here</h1>
+
+    <p class="text-muted mb-4"><strong>By Author Name</strong> | <i class="fas fa-calendar-alt"></i> Dec 20, 2025</p>
+
+    <div class="article-content">
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque vitae fermentum elit. Duis vel ultricies lorem, a bibendum purus.</p>
+      <p>Fusce hendrerit metus ac orci tincidunt, ac cursus ligula tincidunt. Integer at sem risus.</p>
+
+      <div class="article-image mb-4">
+        <img src="assets/products/electronic3.jpg" alt="Illustration" class="img-fluid">
+      </div>
+
+      <p>Morbi malesuada, justo id efficitur bibendum, magna nunc fringilla erat, at ultrices lorem libero vitae mauris.</p>
+    </div>
+  </main>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    $(document).ready(function() {
+      $('.menu-icon').click(function() {
+        $('.mobile-menu').toggleClass('active');
+      });
+    });
+  </script>
+
+<!-- FOOTER -->
+<footer class="blog-footer mt-5">
+            <div class="newsletter">
+                <div class="container">
+                    <div class="wrapper">
+                        <div class="box">
+                            <div class="content">
+                                <h3>Join Our Newsletter</h3>
+                                <p>Get E-mail updates about our lastest shop and <strong>special offers</strong></p>
+                            </div>
+                            <form action="" class="search">
+                                <span class="icon-large"><i class="ri-mail-line"></i></span>
+                                <input type="mail" placeholder="Your email address" required>
+                                <button type="submit">Sign Up</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--Newsletter-->
+  <div class="container text-center">
+    <p>© 2025 GamerShopper Blog</p>
+  </div>
+</footer>
+
+<a href="#" class="back-to-top" id="backToTop">
+    <i class="ri-arrow-up-line"></i>
+
+  <!-- Scripts -->
+<script>
+    const backToTop = document.getElementById('backToTop');
+
+    window.addEventListener('scroll', () => {
+        if (window.scrollY > 300) {
+            backToTop.classList.add('show');
+        } else {
+            backToTop.classList.remove('show');
+        }
+    });
+
+    backToTop.addEventListener('click', (e) => {
+        e.preventDefault();
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+</script>
+
+  <script>
+    const menuBtn = document.getElementById("menuBtn");
+    const mobileMenu = document.getElementById("mobileMenu");
+    const closeBtn = document.getElementById("closeBtn");
+
+    menuBtn.addEventListener("click", () => {
+      mobileMenu.classList.add("show");
+    });
+
+    closeBtn.addEventListener("click", () => {
+      mobileMenu.classList.remove("show");
+    });
+
+     // Close menu when clicking outside
+  document.addEventListener("click", (e) => {
+    // Check if menu is open and the click is outside menu and button
+    if (
+      mobileMenu.classList.contains("show") &&
+      !mobileMenu.contains(e.target) &&
+      e.target !== menuBtn
+    ) {
+      mobileMenu.classList.remove("show");
+    }
+  });
+  </script>
+</body>
+</html>
